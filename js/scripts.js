@@ -1,6 +1,5 @@
 const tabs = document.getElementById('tabs');
 const content = document.querySelectorAll('.content');
-const tabsUnder = document.getElementById('tabs-under');
 const contentUnder = document.querySelectorAll('.content-under');
 
 const changeClass = el => {
@@ -28,15 +27,3 @@ const changeClass2 = el => {
     }
     el.classList.add('active');
 };
-
-tabsUnder.addEventListener('click', e => {
-    const currTab2 = e.target.dataset.btn2;
-    changeClass2(e.target);
-    for (let i = 0; i < contentUnder.length; i++) {
-        contentUnder[i].classList.remove('active');
-        console.log(contentUnder[i].dataset.content2);
-        if (contentUnder[i].dataset.content2 === currTab2) {
-            contentUnder[i].classList.add('active');
-        }
-    }
-});

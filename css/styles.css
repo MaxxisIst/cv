@@ -300,12 +300,13 @@ li {
 .tabs-block-wrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: column;
 }
 #tabs {
   display: flex;
+  justify-content: center;
 }
 .tab-btn {
   max-width: 200px;
