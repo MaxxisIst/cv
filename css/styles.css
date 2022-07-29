@@ -318,8 +318,8 @@ li {
   /* border: 1px solid black;
   border-radius: 5px; */
 }
-.tab-btn:not(:last-child) {
-  margin-right: 20px;
+.tab-btn {
+  padding: 10px 20px;
 }
 .tab-btn:hover {
   cursor: pointer;
@@ -337,4 +337,8 @@ li {
 }
 .content.active {
   display: block;
+}
+
+.future-goal {
+  list-style: circle;
 }
